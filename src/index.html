@@ -70,7 +70,7 @@
   <script src="/socket.io/socket.io.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  const socket = io();
+  const socket = io('websocket-ia-sv-test.onrender.com', {transports: ['websocket']});
 
   const form = document.getElementById('form');
   const input = document.getElementById('input');
